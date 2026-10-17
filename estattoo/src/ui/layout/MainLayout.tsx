@@ -1,8 +1,14 @@
+import Footer from "./partials/Footer";
+import { Header } from "./partials/HEader";
 
 export const MainLayout = ({children}: { children: React.ReactNode }) => {
 
     return (<>
-        {children}
+        <Header />
+        <div className="ps-content">
+            {children}
+        </div>
+        <Footer />
     </>);
 
 

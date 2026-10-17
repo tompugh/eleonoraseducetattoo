@@ -2,6 +2,10 @@
 @import './colors.scss';
 
 :root {
+
+  --ps-header-height: 100px;
+  --ps-body-min-height: 100vh;
+
   --text: #{$pr-contrast};
   --text-h: #{$pr-contrast};
   --bg: #{$primary};
@@ -55,4 +59,35 @@ h2 {
 
 p {
   margin: 0;
+}
+
+.ps-header {
+  position: fixed;
+  width: 100vw;
+  background-color: $secondary;
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-text-box {
+    .title {}
+    .subtitle {}
+  }
+}
+
+.ps-content {
+  padding-top: var(--ps-header-height);
+  height: var(--ps-body-min-height);
+}
+
+.ps-footer {
+  background-color: $secondary;
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-text-box {
+    .title {}
+    .subtitle {}
+  }
 }
