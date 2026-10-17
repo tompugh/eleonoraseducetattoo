@@ -1,0 +1,126 @@
+/* Basic layout config, fonts and COLORS */
+:root {
+  --ps-comment-type-bg-color: #f0f0f0;
+  --ps-avatar-default-bg-color: #21502b;
+}
+
+//THEME COLORS
+$primary: #2C9942;// #0d6efd; 
+$pr-contrast: #5c646b;
+
+$secondary: #5c646b;        
+$sec-contrast: #2C9942; 
+
+$ps-light-contrast: #ffffff;
+$ps-dark-contrast: #1a2332; 
+
+//SYS COLORS
+$success: #00a86b;        
+$warning: #ff7d4d;
+$danger: #f84c4c;
+$transparent: #ffffff00;
+
+//CUSTOM PS COLOR
+$gray: gray;
+$light-gray: #ddd;
+$green: #00a86b;        
+$orange: #ff9800;
+$red: #e53e3e;
+$yellow: #cbc134;
+$blue: #0d6efd;
+$light-blue: #2196f3;
+$black: #000000;
+$white: #ffffff;
+
+// Varianti con opacità
+$primary-05: rgba($primary, 0.05);  // 5% opacità
+$primary-10: rgba($primary, 0.1);   // 10% opacità
+$primary-15: rgba($primary, 0.15);  // 15% opacità
+$primary-20: rgba($primary, 0.2);   // 20% opacità
+$primary-30: rgba($primary, 0.3);   // 30% opacità
+$primary-50: rgba($primary, 0.5);   // 50% opacità
+$primary-60: rgba($primary, 0.6);   // 60% opacità
+$primary-70: rgba($primary, 0.7);   // 70% opacità
+$primary-80: rgba($primary, 0.8);   // 80% opacità
+$primary-90: rgba($primary, 0.9);   // 90% opacità
+
+$secondary-10: rgba($secondary, 0.1);   // 10% opacità
+$secondary-15: rgba($secondary, 0.15);  // 15% opacità
+$secondary-20: rgba($secondary, 0.2);   // 20% opacità
+$secondary-30: rgba($secondary, 0.3);   // 30% opacità
+$secondary-50: rgba($secondary, 0.5);   // 50% opacità
+$secondary-80: rgba($secondary, 0.8);   // 80% opacità
+$secondary-90: rgba($secondary, 0.9);   // 90% opacità
+
+$ps-contrast-05: rgba($ps-light-contrast, 0.05);   // Bianco quasi trasparente
+$ps-contrast-10: rgba($ps-light-contrast, 0.1);    // Bianco molto leggero
+$ps-contrast-15: rgba($ps-light-contrast, 0.15);   // 
+$ps-contrast-20: rgba($ps-light-contrast, 0.2);    // Overlay leggero
+$ps-contrast-25: rgba($ps-light-contrast, 0.25);   // 
+$ps-contrast-30: rgba($ps-light-contrast, 0.3);    // Overlay medio-leggero
+$ps-contrast-40: rgba($ps-light-contrast, 0.4);    // 
+$ps-contrast-50: rgba($ps-light-contrast, 0.5);    // Semi-trasparente
+$ps-contrast-60: rgba($ps-light-contrast, 0.6);    // 
+$ps-contrast-70: rgba($ps-light-contrast, 0.7);    // Più opaco
+$ps-contrast-80: rgba($ps-light-contrast, 0.8);    // Quasi opaco
+$ps-contrast-90: rgba($ps-light-contrast, 0.9);    // Molto opaco
+$ps-contrast-95: rgba($ps-light-contrast, 0.95);   // Quasi pieno
+
+$gray-10: rgba($gray, 0.1);   // 10% opacità
+$gray-20: rgba($gray, 0.2);   // 20% opacità
+$gray-30: rgba($gray, 0.3);   // 30% opacità
+$gray-50: rgba($gray, 0.5);   // 50% opacità
+$gray-60: rgba($gray, 0.6);   // 60% opacità
+$gray-70: rgba($gray, 0.7);   // 70% opacità
+$gray-80: rgba($gray, 0.8);   // 80% opacità
+$gray-90: rgba($gray, 0.9);   // 90% opacità
+
+$light-blue-10: rgba($light-blue, 0.1);   // 10% opacità
+$light-blue-20: rgba($light-blue, 0.2);   // 20% opacità
+$light-blue-30: rgba($light-blue, 0.3);   // 30% opacità
+$light-blue-50: rgba($light-blue, 0.5);   // 50% opacità
+$light-blue-60: rgba($light-blue, 0.6);   // 60% opacità
+$light-blue-70: rgba($light-blue, 0.7);   // 70% opacità
+$light-blue-80: rgba($light-blue, 0.8);   // 80% opacità
+$light-blue-90: rgba($light-blue, 0.9);   // 90% opacità
+
+$warning-10: rgba($warning, 0.1);
+$warning-20: rgba($warning, 0.2);
+$warning-80: rgba($warning, 0.8);
+$warning-90: rgba($warning, 0.9);
+
+$danger-10: rgba($danger, 0.1);
+$danger-20: rgba($danger, 0.2);
+$danger-80: rgba($danger, 0.8);
+$danger-90: rgba($danger, 0.9);
+
+//export per uso con var() function
+:root {
+  --ps-primary-contrast: #{$ps-light-contrast};
+  --primary: #{$primary};
+  --primary-contrast: #{$ps-contrast-50};
+
+  --secondary: #{$secondary};
+  --ps-contrast-50: #{$ps-contrast-50};
+
+  --ps-red: #{$red};
+  --ps-gray: #{$gray};
+  --ps-light-gray: #{$light-gray};
+  --ps-green: #{$green};
+  --ps-blue: #{$blue};
+  --ps-light-blue: #{$light-blue};
+  --ps-orange: #{$orange};
+  --ps-yellow: #{$yellow};
+  --ps-black: #{$black};
+  --ps-white: #{$white};
+  --ps-transparent: #{$transparent};
+
+  --ps-info: #{$primary-20};
+  --ps-success: #{$success};
+  --ps-warning: #{$warning};
+  --ps-warning-80: #{$warning-80};
+  --ps-danger: #{$danger};
+  --ps-danger-80: #{$danger-80};
+
+}
+//end export
