@@ -1,10 +1,11 @@
+import './app.scss'
+
 import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from './core/context/AppContext';
 import { AppRoutes } from './routes/AppRoutes';
 import { MainLayout } from './ui/layout/MainLayout';
-
-import './app.scss';
 import { AuthProvider } from './core/context/AuthContext';
+
 
 function App() {
 
