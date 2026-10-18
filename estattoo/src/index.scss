@@ -61,6 +61,11 @@ p {
   margin: 0;
 }
 
+.ps-main-box {
+  background-color: aqua;
+  height: var(--ps-body-min-height);
+}
+
 .ps-header {
   position: fixed;
   width: 100vw;
@@ -75,9 +80,16 @@ p {
   }
 }
 
+.ps-main-box {
+  width: 100%;
+}
+
 .ps-content {
+  width: 100%;
   padding-top: var(--ps-header-height);
-  height: var(--ps-body-min-height);
+  
+
+
 }
 
 .ps-footer {
