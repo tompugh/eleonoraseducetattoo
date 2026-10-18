@@ -19,6 +19,7 @@ export const Header = () => {
                         <small className="subtitle">{import.meta.env.VITE_APP_SLOGAN}</small>
                     </div>
                 </Navbar.Brand>
+                Test
 
 
 
