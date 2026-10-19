@@ -67,6 +67,7 @@ h2 {
 
 p {
   margin: 0;
+  color: var(--text);
 }
 
 
@@ -84,7 +85,17 @@ p {
   }
   .logo-text-box {
     .title {}
-    .subtitle {}
+    .subtitle {
+      font-size: 0.8rem;
+    }
+  }
+
+  h2, h3, p {
+    color: $sec-contrast;
+  }
+
+  p {
+
   }
 }
 

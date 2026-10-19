@@ -2,15 +2,23 @@ import { Col, Row } from 'react-bootstrap';
 import heroVideo from '../../../assets/hero.mp4';
 import pic1 from '../../../assets/h1.png';
 import pic2 from '../../../assets/h2.png';
+import logo from '../../../assets/logo_w.png';
 
 export const Home = () => {
 
 
 return (<>
     <div className='home hero-section'>
-        <div className='title-box'>
-            <h1 className='px-5 py-5 mb-0 pb-0 theme-main-font'>Eleonora Seduce Tattoo</h1>
-            <p className='fst-italic text-center mt-0 pt-0'>Artista e tatuatrice</p>
+        <div className='title-box px-5 py-5 mb-0 pb-0'>
+            <div className='d-flex align-items-center gap-2 flex-column'>
+                    <h1 className='theme-main-font'>Eleonora Seduce Tattoo</h1>
+                    <img className="logo" src={logo} alt="Logo" width={100} height={100} />
+                    <p className='fst-italic text-center mt-0 pt-0'>Artista e tatuatrice</p>
+                <span>
+                </span>
+            </div>
+            
+            
         </div>
         <div className='media-box'>
             <video width={'100%'} height="700" autoPlay loop controls style={{ objectFit: 'cover' }} src={heroVideo} itemType='video/mp4'>
