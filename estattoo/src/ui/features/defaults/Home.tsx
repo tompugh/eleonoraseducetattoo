@@ -8,8 +8,9 @@ export const Home = () => {
 
 return (<>
     <div className='home hero-section'>
-        <div className='title-box' style={{ background: '#000000a8' }}>
-            <h1 className='px-5 py-5 mb-0'>Eleonora Seduce Tattoo</h1>
+        <div className='title-box'>
+            <h1 className='px-5 py-5 mb-0 pb-0 theme-main-font'>Eleonora Seduce Tattoo</h1>
+            <p className='fst-italic text-center mt-0 pt-0'>Artista e tatuatrice</p>
         </div>
         <div className='media-box'>
             <video width={'100%'} height="700" autoPlay loop controls style={{ objectFit: 'cover' }} src={heroVideo} itemType='video/mp4'>

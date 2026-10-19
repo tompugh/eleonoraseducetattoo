@@ -3,6 +3,8 @@
 
 $ps-mq-breakdown-md: 768px;
 
+$sec-bg-opacity: $secondary-30;
+
 :root {
 
   --ps-header-height: 100px;
@@ -36,6 +38,12 @@ $ps-mq-breakdown-md: 768px;
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+.theme-main-font {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -113,6 +121,9 @@ p {
   .title-box {
     display: none;
     height: auto;
+    background: #ffffff;
+background: linear-gradient(180deg,rgba(92, 104, 89, 0.8) 0%, rgba(159, 177, 155, 0.2) 50%);
+    // background-color: $sec-bg-opacity;
   }
   
   .media-box {
@@ -123,6 +134,11 @@ p {
 @media screen and (min-width: $ps-mq-breakdown-md) {
   .hero-section {
     .title-box {
+
+      h1, p {
+        color: $white;
+      }
+
       display: initial;
       height: var(--ps-hero-box-height);
       position: absolute;
