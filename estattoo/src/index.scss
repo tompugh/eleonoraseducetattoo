@@ -1,6 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './colors.scss';
 
+$ps-mq-breakdown-md: 768px;
+
 :root {
 
   --ps-header-height: 100px;
@@ -118,7 +120,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $ps-mq-breakdown-md) {
   .hero-section {
     .title-box {
       display: initial;
