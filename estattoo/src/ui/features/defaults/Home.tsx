@@ -39,7 +39,7 @@ return (<>
             </div>
         </Col>
         <Col lg='6' md='6' xs='12'>
-            <p>
+            <p className='ps-text-box'>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
 
@@ -52,7 +52,7 @@ return (<>
 
         
         <Col lg='6' md='6' xs='12'>
-            <p>
+            <p className='ps-text-box'>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
 
