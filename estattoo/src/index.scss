@@ -13,7 +13,7 @@ $sec-bg-opacity: $secondary-30;
 
   --text: #{$pr-contrast};
   --text-h: #{$pr-contrast};
-  --bg: #{$primary};
+  --bg: #{$secondary-80};
   --border: #{$primary-10};
 
 
@@ -76,7 +76,7 @@ p {
   position: fixed;
   width: 100vw;
   height: var(--ps-header-height);
-  background-color: $secondary;
+  background: linear-gradient(90deg,rgba(92, 104, 89, 1) 25%, rgba(255, 255, 255, 0.1) 70%);
   color: $sec-contrast;
   .logo {
     width: 50px;
@@ -121,8 +121,8 @@ p {
   .title-box {
     display: none;
     height: auto;
-    background: #ffffff;
-background: linear-gradient(180deg,rgba(92, 104, 89, 0.8) 0%, rgba(159, 177, 155, 0.2) 50%);
+    // background: #ffffff;
+    background: linear-gradient(180deg,rgba(92, 104, 89, 0.8) 0%, rgba(159, 177, 155, 0.2) 50%);
     // background-color: $sec-bg-opacity;
   }
   

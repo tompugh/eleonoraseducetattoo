@@ -1,8 +1,9 @@
-
+@import './colors.scss';
 
 .home-section {
     width: 100vw;
     max-height: 600px;
+    background-color: $primary;
 
     div {
         padding: 0;
