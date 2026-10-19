@@ -5,6 +5,7 @@
 
   --ps-header-height: 100px;
   --ps-body-min-height: 100vh;
+  --ps-hero-box-height: 700px;
 
   --text: #{$pr-contrast};
   --text-h: #{$pr-contrast};
@@ -61,8 +62,10 @@ p {
 
 
 .ps-header {
+  z-index: 99;
   position: fixed;
   width: 100vw;
+  height: var(--ps-header-height);
   background-color: $secondary;
   color: $sec-contrast;
   .logo {
@@ -99,5 +102,28 @@ p {
   .logo-text-box {
     .title {}
     .subtitle {}
+  }
+}
+
+
+// hero section
+.hero-section {
+  .title-box {
+    display: none;
+    height: auto;
+  }
+  
+  .media-box {
+    height: var(--ps-hero-box-height);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    .title-box {
+      display: initial;
+      height: var(--ps-hero-box-height);
+      position: absolute;
+     }
   }
 }
