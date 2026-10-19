@@ -90,8 +90,26 @@ p {
     }
   }
 
-  h2, h3, p {
+  h2, h3, p  {
     color: $sec-contrast;
+  }
+
+  .navbar-toggler, .navbar-toggler-icon {
+    color: $sec-contrast !important;
+  }
+
+  .nav-link {
+    padding-top: 1px;
+    padding-bottom: 0;
+    color: $sec-contrast;
+    &.active {
+      color: $white;
+      border-bottom: 1px solid $primary;
+    }
+    &:hover {
+      color: white;
+      border-bottom: 1px solid $white;
+    }
   }
 
   p {
