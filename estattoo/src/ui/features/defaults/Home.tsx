@@ -27,18 +27,20 @@ return (<>
             </video>
         </div>
     </div>
-    <Row>
-        <Col>
-        </Col>
-    </Row>
+
     <Row className='home-section'>
 
-        <Col lg='6' md='6' xs='12' >
+        <Col lg='6' xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
             <div>
                 <img src={pic1} />
             </div>
         </Col>
-        <Col lg='6' md='6' xs='12'>
+        <Col lg='6' xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
+            <div className='title-box d-flex justify-content-center align-items-center'>
+                <div>
+                    <h1 className='theme-main-font'>L'arte del tatuaggio</h1>
+                </div>
+            </div>
             <p className='ps-text-box'>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
@@ -52,6 +54,11 @@ return (<>
 
         
         <Col lg='6' md='6' xs='12'>
+            <div className='title-box d-flex justify-content-center align-items-center'>
+                <div>
+                    <h1 className='theme-main-font'>Lo stile adatto a te</h1>
+                </div>
+            </div>
             <p className='ps-text-box'>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
