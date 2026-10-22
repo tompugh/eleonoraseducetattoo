@@ -3,6 +3,7 @@ import heroVideo from '../../../assets/hero.mp4';
 import pic1 from '../../../assets/h1.png';
 import pic2 from '../../../assets/h2.png';
 import logo from '../../../assets/logo_w.png';
+import dec1 from '../../../assets/decoration1.png';
 
 export const Home = () => {
 
@@ -32,15 +33,9 @@ return (<div className='home'>
         <div></div>
     </div>
 
-
     <Row className='section'>
-
-
         <Col lg='6' md='6' xs='12'>
-            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
-                <div className='decorator'>
-                    <div></div>
-                </div>
+            <div className='mobile ps-title-box justify-content-center align-items-center flex-column'>
                 <div>
                     <h1>Lo stile adatto a te</h1>
                 </div>
@@ -48,19 +43,26 @@ return (<div className='home'>
                     <div></div>
                 </div>
             </div>
-            <p className='ps-text-box'>
-
+            <div className='decorator-img text-center mt-1'>
+                <img src={dec1} />
+            </div>
+            <p className='ps-text-box mt-5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
-
-
             </p>
+
         </Col>
         <Col lg='6' md='6' xs='12' >
             <div className='ps-img-box'>
-                <div className='decorator'>
-                    <div></div>
+
+                <div className='desktop ps-title-box justify-content-center align-items-center flex-column'>
+                    <div>
+                        <h1>Lo stile adatto a te</h1>
+                    </div>
+                    <div className='decorator'>
+                        <div></div>
+                    </div>
                 </div>
-                <img src={pic2} />
+                <img src={pic1} />
             </div>
         </Col>
 
@@ -71,20 +73,22 @@ return (<div className='home'>
     </div>
 
     <Row className='section'>
-
-        <Col lg='6' xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
+        <Col lg='6' md='6' xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
             <div className='ps-img-box'>
-                <div className='decorator'>
-                    <div></div>
+
+                <div className='desktop ps-title-box justify-content-center align-items-center flex-column'>
+                    <div>
+                        <h1>Lo stile adatto a te</h1>
+                    </div>
+                    <div className='decorator'>
+                        <div></div>
+                    </div>
                 </div>
-                <img src={pic1} />
+                <img src={pic2} />
             </div>
         </Col>
-        <Col lg='6' xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
-                <div className='decorator'>
-                    <div></div>
-                </div>
+        <Col lg='6' xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }} >
+            <div className='mobile ps-title-box justify-content-center align-items-center flex-column'>
                 <div>
                     <h1>L'arte del tatuaggio</h1>
                 </div>
@@ -92,17 +96,17 @@ return (<div className='home'>
                     <div></div>
                 </div>
             </div>
-            <p className='ps-text-box'>
-
+            <div className='decorator-img text-center mt-1'>
+                <img src={dec1} />
+            </div>
+            <p className='ps-text-box mt-5'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
-
-
             </p>
+
         </Col>
 
     </Row>
 
 
-</div>)
-
+    </div>)
 }

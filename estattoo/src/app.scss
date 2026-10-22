@@ -3,6 +3,14 @@
 
 $ps-mq-breakdown-md: 768px;
 
+.mobile {
+    display: none !important;
+}
+
+.desktop {
+    display: flex !important;
+}
+
 .home .section {
     background-color: $primary-10;
     position: relative;
@@ -16,39 +24,51 @@ $ps-mq-breakdown-md: 768px;
 
    > div { padding: 0; } // solo le Col, non tutti i div annidati
 
-    img {
-        display: block;   // elimina lo spazio sotto l'img inline
+ 
+
+    .decorator {
         width: 100%;
-        height: 600px;    // altezza esplicita → object-fit funziona
-        object-fit: cover;
+        height:31px;
+        border-top: 1px solid $primary-80;
+        border-bottom: 1px solid $primary-80;
+        background-color: $sec-contrast;
 
-        border-left: 2px solid $primary;
-        border-right: 2px solid $primary;
-        // padding: 50px;
-    }
-
-    .ps-img-box {
-        .decorator {
-            width: 100%;
-            height:210px;
-            border-top: 1px solid $primary-80;
-            border-bottom: 1px solid $primary-80;
+        > div {
+            height: 21px;
             background-color: $sec-contrast;
-
-            > div {
-                height: 21px;
-                background-color: $sec-contrast;
-                background-color: $secondary-50;
-                margin: 4px 0px 0px 0px;
-                border-top: 2px solid $primary-80;
-                border-bottom: 2px solid $primary-80;
-            }
+            background-color: $secondary-50;
+            margin: 4px 0px 0px 0px;
+            border-top: 2px solid $primary-80;
+            border-bottom: 2px solid $primary-80;
         }
 
     }
 
+    .decorator-img {
+        position: relative;
+        height: 150px;
+        img {
+            object-fit: cover;
+            height: 250px;
+        }
+    }
+
+    .ps-img-box {
+        img {
+            display: block;   // elimina lo spazio sotto l'img inline
+            width: 100%;
+            height: 400px;    // altezza esplicita → object-fit funziona
+            object-fit: cover;
+
+            border-left: 2px solid $primary;
+            border-right: 2px solid $primary;
+            // padding: 50px;
+        }
+    }
+
     .ps-title-box {
         position: relative;
+        display: flex;
         background-color: $primary;
         margin: 0;
         padding: 0;
@@ -89,6 +109,14 @@ $ps-mq-breakdown-md: 768px;
 
 //mobile
 @media screen and (max-width: $ps-mq-breakdown-md) {
+    .mobile {
+        display: flex !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+    
     .home .section {
         img {
             height: 400px;

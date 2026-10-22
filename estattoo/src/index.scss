@@ -130,6 +130,10 @@ p {
 .ps-footer {
   background-color: $secondary;
   color: $sec-contrast;
+  .navbar-text {
+    color: $sec-contrast;
+  }
+  height: 250px;
   .logo {
     width: 50px;
     height: 50px;
@@ -173,6 +177,23 @@ p {
 }
 
 .section-separator {
+  width: 100%;
+  height:31px;
+  border-top: 1px solid $primary-80;
+  border-bottom: 1px solid $primary-80;
+  background-color: $sec-contrast;
+
+  > div {
+      height: 21px;
+      background-color: $sec-contrast;
+      background-color: $secondary-50;
+      margin: 4px 0px 0px 0px;
+      border-top: 2px solid $primary-80;
+      border-bottom: 2px solid $primary-80;
+  }
+}
+
+.section-separator.light {
   height: 2px;
   background-color: $primary;
 }

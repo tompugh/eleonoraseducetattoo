@@ -9,9 +9,13 @@ export default function Footer() {
             </div>
             <Navbar className="ps-footer">
                 <Container>
-                    <Navbar.Text>© {new Date().getFullYear()} Your Company</Navbar.Text>
+                    {/* <Navbar.Text>Eleonora Seduce Tattoo - email: aaaaaa@aaaaaa.aaaa</Navbar.Text> */}
+                    <Navbar.Text>© {new Date().getFullYear()} Eleonora Seduce Tattoo</Navbar.Text>
                 </Container>
             </Navbar>
+            <div className='section-separator'>
+                <div></div>
+            </div>
         </>
     )
 }
