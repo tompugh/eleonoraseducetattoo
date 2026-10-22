@@ -32,10 +32,51 @@ return (<div className='home'>
         <div></div>
     </div>
 
+
+    <Row className='section'>
+
+
+        <Col lg='6' md='6' xs='12'>
+            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
+                <div className='decorator'>
+                    <div></div>
+                </div>
+                <div>
+                    <h1>Lo stile adatto a te</h1>
+                </div>
+                <div className='decorator'>
+                    <div></div>
+                </div>
+            </div>
+            <p className='ps-text-box'>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
+
+
+            </p>
+        </Col>
+        <Col lg='6' md='6' xs='12' >
+            <div className='ps-img-box'>
+                <div className='decorator'>
+                    <div></div>
+                </div>
+                <img src={pic2} />
+            </div>
+        </Col>
+
+    </Row>
+
+    <div className='section-separator'>
+        <div></div>
+    </div>
+
     <Row className='section'>
 
         <Col lg='6' xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
-            <div>
+            <div className='ps-img-box'>
+                <div className='decorator'>
+                    <div></div>
+                </div>
                 <img src={pic1} />
             </div>
         </Col>
@@ -58,40 +99,9 @@ return (<div className='home'>
 
             </p>
         </Col>
-        
+
     </Row>
-    <div className='section-separator'>
-        <div></div>
-    </div>
-    <Row className='section'>
 
-        
-        <Col lg='6' md='6' xs='12'>
-            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
-                <div className='decorator'>
-                    <div></div>
-                </div>
-                <div>
-                    <h1>Lo stile adatto a te</h1>
-                </div>
-                <div className='decorator'>
-                    <div></div>
-                </div>
-            </div>
-            <p className='ps-text-box'>
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat mi quis pretium semper. Proin luctus orci ac neque venenatis, quis commodo dolor posuere. Curabitur dignissim sapien quis cursus egestas. Donec blandit auctor arcu, nec pellentesque eros molestie eget. In consectetur aliquam hendrerit. Sed cursus mauris vitae ligula pellentesque, non pellentesque urna aliquet.
-
-
-            </p>
-        </Col>
-        <Col lg='6' md='6' xs='12' >
-            <div>
-                <img src={pic2} />
-            </div>
-        </Col>
-        
-    </Row>
 
 </div>)
 
