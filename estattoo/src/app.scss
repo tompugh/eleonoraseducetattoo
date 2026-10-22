@@ -1,31 +1,64 @@
 @import './colors.scss';
+@import './fonts.scss';
 
 $ps-mq-breakdown-md: 768px;
 
-.title-box {
-    margin: 0;
-    padding: 0;
-    height: 100px;
+.home .section {
+    background-color: $primary-10;
+    position: relative;
+    width: 100%;          // non 100vw
+    margin: 0;            // annulla i margini negativi della Row
+    overflow: hidden;     // sicurezza: niente esce dal contenitore
 
-    h1 {
-        font-size: 3rem;
+    p {
+        color: $secondary !important;
     }
 
-}
-
-.home-section {
-    width: 100vw;
-    max-height: 600px;
-    background-color: $primary;
-
-    div {
-        padding: 0;
-    }
+   > div { padding: 0; } // solo le Col, non tutti i div annidati
 
     img {
-        object-fit: cover;
+        display: block;   // elimina lo spazio sotto l'img inline
         width: 100%;
-        height: 300px;
+        height: 600px;    // altezza esplicita → object-fit funziona
+        object-fit: cover;
+
+        border: 2px solid $primary;
+        // padding: 50px;
+    }
+
+    .ps-title-box {
+        position: relative;
+        background-color: $primary;
+        margin: 0;
+        padding: 0;
+        // height: 100px;
+        // box-shadow:  0px 15px 5px #{$primary};
+
+        h1 {
+            padding-top: 45px;
+            padding-bottom: 15px;
+            font-size: 3rem;
+            text-decoration: underline;
+
+        }
+
+        .decorator {
+            width: 100%;
+            height: 31px;
+            border-top: 1px solid $primary-80;
+            border-bottom: 1px solid $primary-80;
+            background-color: $sec-contrast;
+
+            > div {
+                height: 21px;
+                background-color: $sec-contrast;
+                background-color: $secondary-50;
+                margin: 4px 0px 0px 0px;
+                border-top: 2px solid $primary-80;
+                border-bottom: 2px solid $primary-80;
+            }
+        }
+
     }
 
     .ps-text-box {
@@ -33,15 +66,11 @@ $ps-mq-breakdown-md: 768px;
     }
 }
 
-@media screen and (min-width: $ps-mq-breakdown-md) {
+//mobile
+@media screen and (max-width: $ps-mq-breakdown-md) {
     .home-section {
-        max-height: 600px;
         img {
-            height: 600px;
-        }
-
-        .ps-text-box {
-            min-height: 600px;
+            height: 400px;
         }
     }
 }

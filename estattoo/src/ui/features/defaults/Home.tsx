@@ -7,11 +7,11 @@ import logo from '../../../assets/logo_w.png';
 export const Home = () => {
 
 
-return (<>
-    <div className='home hero-section'>
-        <div className='title-box px-5 py-5 mb-0 pb-0'>
+return (<div className='home'>
+    <div className='hero-section'>
+        <div className='title-box px-5 mb-0 pb-0'>
             <div className='d-flex align-items-center gap-2 flex-column'>
-                    <h1 className='theme-main-font'>Eleonora Seduce Tattoo</h1>
+                    <h1>Eleonora Seduce Tattoo</h1>
                     <img className="logo" src={logo} alt="Logo" width={100} height={100} />
                     <p className='fst-italic text-center mt-0 pt-0'>Artista e tatuatrice</p>
                 <span>
@@ -28,7 +28,11 @@ return (<>
         </div>
     </div>
 
-    <Row className='home-section'>
+    <div className='section-separator'>
+        <div></div>
+    </div>
+
+    <Row className='section'>
 
         <Col lg='6' xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} >
             <div>
@@ -36,9 +40,15 @@ return (<>
             </div>
         </Col>
         <Col lg='6' xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
-            <div className='title-box d-flex justify-content-center align-items-center'>
+            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
+                <div className='decorator'>
+                    <div></div>
+                </div>
                 <div>
-                    <h1 className='theme-main-font'>L'arte del tatuaggio</h1>
+                    <h1>L'arte del tatuaggio</h1>
+                </div>
+                <div className='decorator'>
+                    <div></div>
                 </div>
             </div>
             <p className='ps-text-box'>
@@ -50,13 +60,22 @@ return (<>
         </Col>
         
     </Row>
-    <Row className='home-section'>
+    <div className='section-separator'>
+        <div></div>
+    </div>
+    <Row className='section'>
 
         
         <Col lg='6' md='6' xs='12'>
-            <div className='title-box d-flex justify-content-center align-items-center'>
+            <div className='ps-title-box d-flex justify-content-center align-items-center flex-column'>
+                <div className='decorator'>
+                    <div></div>
+                </div>
                 <div>
-                    <h1 className='theme-main-font'>Lo stile adatto a te</h1>
+                    <h1>Lo stile adatto a te</h1>
+                </div>
+                <div className='decorator'>
+                    <div></div>
                 </div>
             </div>
             <p className='ps-text-box'>
@@ -74,6 +93,6 @@ return (<>
         
     </Row>
 
-</>)
+</div>)
 
 }
